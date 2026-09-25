@@ -10,9 +10,10 @@ from fastapi.staticfiles import StaticFiles
 from sqlalchemy.orm import Session
 from sqlalchemy import desc
 
-from . import models, schemas
-from .database import Base, engine, get_db
-from .rates import rate_book
+import models
+import schemas
+from database import Base, engine, get_db
+from rates import rate_book
 
 # Create DB tables on startup if they don't exist yet
 Base.metadata.create_all(bind=engine)
