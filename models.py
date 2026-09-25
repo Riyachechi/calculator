@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String, Float, Boolean, DateTime
 from sqlalchemy.sql import func
 
-from .database import Base
+from database import Base
 
 
 class Order(Base):
